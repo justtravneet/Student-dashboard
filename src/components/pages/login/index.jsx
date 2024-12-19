@@ -2,7 +2,7 @@ import React from "react";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import OwlCarousel from "react-owl-carousel";
-import { LoginImg, NetIcon1, NetIcon2 } from "../../imagepath";
+import { LoginImg,logo, NetIcon1, NetIcon2 } from "../../imagepath";
 import FeatherIcon from "feather-icons-react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
@@ -72,7 +72,7 @@ const Login = () => {
                 <div className="mentor-course text-center">
                   <h2>
                     Welcome to <br />
-                    Anginat
+                    Spring Learns
                   </h2>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -92,7 +92,7 @@ const Login = () => {
                 <div className="mentor-course text-center">
                   <h2>
                     Welcome to <br />
-                    Anginat
+                    Spring Learns
                   </h2>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -112,7 +112,7 @@ const Login = () => {
                 <div className="mentor-course text-center">
                   <h2>
                     Welcome to <br />
-                   Anginat
+                    Spring Learns
                   </h2>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -130,12 +130,12 @@ const Login = () => {
               <div className="loginbox">
                 <div className="w-100">
                   <div className="img-logo">
-                     <p style={{fontSize:"28px"}} >Anginat</p>
+                  <img src={logo} className="img-fluid" alt="Logo" />
                     <div className="back-home">
                       <Link to="/home">Back to Home</Link>
                     </div>
                   </div>
-                  <h1>Sign into Your Account</h1>
+                  <p style={{fontSize:"30px", fontWeight:"500"}}>Admin Sign in</p>
                   <form action="/reactjs/instructor/instructor-dashboard">
                     <div className="input-block">
                       <label className="form-control-label">Email</label>

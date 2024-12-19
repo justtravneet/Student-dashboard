@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import OwlCarousel from "react-owl-carousel";
-import { LoginImg, logo, NetIcon1, NetIcon2 } from "../../imagepath";
+import { LoginImg,logo,  NetIcon1, NetIcon2 } from "../../imagepath";
 import { useState } from "react";
 
 const hasNumber = (value) => {
@@ -169,7 +169,7 @@ const Register = () => {
                 <div className="mentor-course text-center">
                   <h2>
                     Welcome to <br />
-                    DreamsLMS Courses.
+                    Spring Learns
                   </h2>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -185,7 +185,7 @@ const Register = () => {
                 <div className="mentor-course text-center">
                   <h2>
                     Welcome to <br />
-                    DreamsLMS Courses.
+                    Spring Learns
                   </h2>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -201,7 +201,7 @@ const Register = () => {
                 <div className="mentor-course text-center">
                   <h2>
                     Welcome to <br />
-                    DreamsLMS Courses.
+                    Spring Learns
                   </h2>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -219,63 +219,102 @@ const Register = () => {
               <div className="loginbox">
                 <div className="img-logo">
                   <img src={logo} className="img-fluid" alt="Logo" />
+                
                   <div className="back-home">
                     <Link to="/home">Back to Home</Link>
                   </div>
                 </div>
-                <h1>Sign up</h1>
+                 <p style={{fontSize:"30px", fontWeight:"500"}}>Admin Sign up</p>
                 <form action="/reactjs/login">
+                  <div style={{ display: "flex", width: "100%", gap: "15px" }} className="input-block">
+                    <div style={{ width: "50%" }}>
+                      <label className="form-control-label">Email</label>
+                      <input
+                        type="text"
+                        className="form-control"
+                        placeholder="Enter your Email"
+                      />
+                    </div>
+
+                    <div style={{ width: "50%" }}>
+                      <label className="form-control-label">Phone Number</label>
+                      <input
+                        type="number"
+                        className="form-control"
+                        placeholder="Enter your Phone Number"
+                      />
+                    </div>
+
+                  </div>
                   <div className="input-block">
-                    <label className="form-control-label">Full Name</label>
+                    <label className="form-control-label">Username</label>
                     <input
                       type="text"
                       className="form-control"
-                      placeholder="Enter your Full Name"
+                      placeholder="Enter your Username"
                     />
                   </div>
                   <div className="input-block">
-                    <label className="form-control-label">Email</label>
-                    <input
-                      type="email"
-                      className="form-control"
-                      placeholder="Enter your email address"
-                    />
-                  </div>
-                  <div className="input-block">
-                    <label className="form-control-label">Password</label>
-                    <div className="pass-group" id="passwordInput">
-                      <input
-                        className="form-control pass-input"
-                        placeholder="Enter your password"
-                        type={eye ? "password" : "text"}
-                        onChange={handlePasswordChange}
-                      />
-                      {/* <span onClick={onEyeClick} className={`fa toggle-password feather-eye" ${eye ? "fa-eye" : "fa-eye-slash" }`}/> */}
-                      <span
-                        onClick={onEyeClick}
-                        className={`fa toggle-password feather-eye" ${
-                          eye ? "fa-eye" : "fa-eye-slash"
-                        }`}
-                      />
-                      <span className="toggle-password feather-eye"></span>
-                      <span className="pass-checked">
-                        <i className="feather-check"></i>
-                      </span>
+                    <div style={{display:"flex", width:"100%",gap:"15px"}}>
+                      <div style={{width:"50%"}}>
+                        <label className="form-control-label">Password</label>
+                        <div className="pass-group" id="passwordInput">
+                          <input
+                            className="form-control pass-input"
+                            placeholder="Enter your password"
+                            type={eye ? "password" : "text"}
+                            onChange={handlePasswordChange}
+                          />
+                          {/* <span onClick={onEyeClick} className={`fa toggle-password feather-eye" ${eye ? "fa-eye" : "fa-eye-slash" }`}/> */}
+                          <span
+                            onClick={onEyeClick}
+                            className={`fa toggle-password feather-eye" ${eye ? "fa-eye" : "fa-eye-slash"
+                              }`}
+                          />
+                          <span className="toggle-password feather-eye"></span>
+                          <span className="pass-checked">
+                            <i className="feather-check"></i>
+                          </span>
+                        </div>
+                      </div>
+
+                      <div style={{width:"50%"}}>
+                        <label className="form-control-label">Confirm-Password</label>
+                        <div className="pass-group" id="passwordInput">
+                          <input
+                            className="form-control pass-input"
+                            placeholder="Re-Enter your password"
+                            type={eye ? "password" : "text"}
+                            onChange={handlePasswordChange}
+                          />
+                          {/* <span onClick={onEyeClick} className={`fa toggle-password feather-eye" ${eye ? "fa-eye" : "fa-eye-slash" }`}/> */}
+                          <span
+                            onClick={onEyeClick}
+                            className={`fa toggle-password feather-eye" ${eye ? "fa-eye" : "fa-eye-slash"
+                              }`}
+                          />
+                          <span className="toggle-password feather-eye"></span>
+                          <span className="pass-checked">
+                            <i className="feather-check"></i>
+                          </span>
+                        </div>
+                      </div>
                     </div>
+
+
                     <div
                       id="passwordStrength"
                       style={{ display: "flex" }}
-                      className={`password-strength ${
-                        strength === "poor"
-                          ? "poor-active"
-                          : strength === "weak"
+                      className={`password-strength ${strength === "poor"
+                        ? "poor-active"
+                        : strength === "weak"
                           ? "avg-active"
                           : strength === "strong"
-                          ? "strong-active"
-                          : strength === "heavy"
-                          ? "heavy-active"
-                          : ""
-                      }`}
+                            ? "strong-active"
+                            : strength === "heavy"
+                              ? "heavy-active"
+                              : ""
+                        }`}
                     >
                       <span id="poor" className="active"></span>
                       <span id="weak" className="active"></span>
@@ -303,7 +342,7 @@ const Register = () => {
                       to="/login"
                       className="btn btn-primary btn-start"
                       type="submit"
-                      // onClick={() => navigate("/reactjs/login")}
+                    // onClick={() => navigate("/reactjs/login")}
                     >
                       Create Account
                     </Link>

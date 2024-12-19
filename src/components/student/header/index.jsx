@@ -150,8 +150,8 @@ export default function StudentHeader({ activeMenu }) {
                 </span>
               </Link>
               <Link to="/home" className="navbar-brand logo">
-                {/* <img src={logo} className="img-fluid" alt="Logo" /> */}
-                <p style={{fontSize:"28px", fontWeight:"600"}}>Anginat</p>
+                <img src={logo} className="img-fluid" alt="Logo" />
+                
               </Link>
             </div>
             <div className="main-menu-wrapper">

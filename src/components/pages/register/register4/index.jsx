@@ -296,7 +296,7 @@ const RegisterFour = () => {
                               to="/register5"
                               className="btn btn-primary btn-start"
                             >
-                              Next
+                              Next ss
                             </Link>
                           </div>
                         </div>

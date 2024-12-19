@@ -15366,7 +15366,7 @@ input[type="password"]::-ms-clear {
 ------------------------------*/
 
 .breadcrumb-bar.breadcrumb-bar-info {
-  padding: 120px 0 40px;
+  padding: 40px 0 40px;
   background: url("../img/bg/breadcrumb-bar.png");
   background-repeat: no-repeat;
   background-size: cover;

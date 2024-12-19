@@ -53,7 +53,7 @@ const StudentDashboard = () => {
                             {/* Student Dashboard */}
                             <div className="col-xl-9 col-lg-9">
                                 {/* Dashboard Grid */}
-                                <div className="row justify-content-center">
+                                <div style={{marginTop:"0px"}} className="row justify-content-center">
                                     <div className="col-lg-4 col-md-6 d-flex">
                                         <div className="card dash-info flex-fill">
                                             <div className="card-body">

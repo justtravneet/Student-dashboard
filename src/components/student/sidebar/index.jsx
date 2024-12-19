@@ -26,7 +26,7 @@ export default function StudentSidebar() {
                   <Link to="/student/student-profile">Rolands Richard</Link>
                 </h4>
                 <p>Student</p>
-                
+
               </div>
             </div>
           </div>
@@ -58,7 +58,21 @@ export default function StudentSidebar() {
                   Enrolled Courses
                 </Link>
               </li>
-              <li className={`nav-item ${location.pathname === '/student/student-wishlist' || location.pathname === '/student/student-quiz-details' ? 'active' : ''}`}>
+              <li className={`nav-item ${location.pathname === '/student/student-referral' ? 'active' : ''}`}>
+
+                <Link to="/student/student-referral" className="nav-link">
+                  <i className="bx bxs-user-plus" />
+                  Referrals
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/home" className="nav-link">
+                  <i className="bx bxs-log-out" />
+                  Logout
+                </Link>
+              </li>
+
+              {/* <li className={`nav-item ${location.pathname === '/student/student-wishlist' || location.pathname === '/student/student-quiz-details' ? 'active' : ''}`}>
 
                 <Link to="/student/student-wishlist" className="nav-link">
                   <i className="bx bxs-heart" />
@@ -112,22 +126,17 @@ export default function StudentSidebar() {
                   <i className="bx bxs-coupon" />
                   Support Tickets
                 </Link>
-              </li>
+              </li> */}
             </ul>
-            <h3>Account Settings</h3>
+
             <ul>
-              <li className={`nav-item ${location.pathname === '/student/student-setting' || location.pathname === '/student/student-change-password' || location.pathname === '/student/student-social-profile' || location.pathname === '/student/student-linked-accounts' || location.pathname === '/student/student-notification' ? 'active' : ''}`}>
+              {/* <li className={`nav-item ${location.pathname === '/student/student-setting' || location.pathname === '/student/student-change-password' || location.pathname === '/student/student-social-profile' || location.pathname === '/student/student-linked-accounts' || location.pathname === '/student/student-notification' ? 'active' : ''}`}>
                 <Link to="/student/student-setting" className="nav-link ">
                   <i className="bx bxs-cog" />
                   Settings
                 </Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/home" className="nav-link">
-                  <i className="bx bxs-log-out" />
-                  Logout
-                </Link>
-              </li>
+              </li> */}
+
             </ul>
           </div>
         </div>
